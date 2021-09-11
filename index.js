@@ -17,42 +17,53 @@ const questions = [
     } ,
     {
         type: "input",
+        name: "github",
+        message: "What is the Users Github?",
+    } ,
+    {
+        type: "input",
+        name: "linkdin",
+        message: "What is the Users Linkdin?",
+    } ,
+    {
+        type: "input",
         name: "description",
-        message: "What is the description?",
+        message: "What is the description of this ReadMe.md?",
     },
     {
         type: "input",
         name: "table of contents",
-        message: "Define the contents",
+        message: "Define the table of contents of this ReadMe.md",
     },
     {
         type: "input",
         name: "installtion",
-        message: "What type installations?",
+        message: "What type of installations were installed?",
     },
     {
         type: "input",
         name: "liscense",
-        message: "What type of license used?",
+        message: "What type of license are used?",
     },
     {
         type: "input",
         name: "contributing",
-        message: "The contribution?",
+        message: "Any other contribution added?",
     },
     {
         type: "input",
         name: "tests",
-        message: "What is the tests?",
-    },
-    {
-        type: "input",
-        name: "questions",
-        message: "What is the questions?",
+        message: "What are the tests?",
+        choices: [
+            "functionality",
+            "no test ran"
+        ]
     }
+    
+    
+
 
 ]
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(),fileName),data)
