@@ -12,6 +12,17 @@ const questions = [
     },
     {
         type: "input",
+        name: "table of contents",
+        message: "Define the table of contents of this ReadMe.md",
+        choices: [
+            "Description",
+            "Screen-Shots",
+            "License",
+            "Installation"
+        ]
+    },
+    {
+        type: "input",
         name: "email",
         message: "What is the Users Email?",
     } ,
@@ -29,11 +40,6 @@ const questions = [
         type: "input",
         name: "description",
         message: "What is the description of this ReadMe.md?",
-    },
-    {
-        type: "input",
-        name: "table of contents",
-        message: "Define the table of contents of this ReadMe.md",
     },
     {
         type: "input",
